@@ -1,0 +1,10 @@
+@use "/src/variables" as vars;
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  max-height: 33vh;
+  overflow-y: scroll;
+}

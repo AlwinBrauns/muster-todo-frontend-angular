@@ -1,0 +1,4 @@
+<form [formGroup]="addTodoForm" (submit)="onSubmit()">
+  <input formControlName="text" title="todo text" aria-label="todo text" type="text" placeholder="todo"/>
+  <button title="add todo" aria-label="add todo" type="submit">Add</button>
+</form>

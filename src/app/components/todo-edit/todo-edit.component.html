@@ -1,0 +1,8 @@
+<form [formGroup]="formEdit" (submit)="onChangeTodo()">
+  <label for="change-text">Change Text</label>
+  <input type="text" id="change-text" formControlName="text"/>
+  <div class="button-group">
+    <button type="submit">Change</button>
+    <button type="submit" value="delete" (click)="shouldDelete=true">Delete</button>
+  </div>
+</form>

@@ -1,0 +1,18 @@
+<div class="lead">
+  <fa-icon class="icon" *ngIf="todo.checked" [icon]="faCheck" size="lg"></fa-icon>
+</div>
+<div class="content">
+  <p>{{todo.text}}</p>
+</div>
+<div class="trail">
+  <fa-icon
+    class="edit"
+    tabindex="0"
+    title="edit todo"
+    aria-label="edit todo"
+    role="button"
+    [icon]="faEdit"
+    (click)="onEdit()"
+    (keydown.enter)="onEdit()"
+  ></fa-icon>
+</div>
